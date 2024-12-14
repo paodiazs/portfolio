@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="/assets/star.png">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Paola Díaz</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Paola Díaz</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/pp.png" alt="Paola Díaz profile picture"/>
+        </div>
+        <div class="section__text">
+            <h1 class="title">Hi, I´m Pao</h1>
+            <br>
+            <p class="section__text__p2">I´m an explorer and autodidact, ready to learn and to help others with what i create.
+              <br>I really enjoy working on data bases, BackEnd , FrontEnd, design and creative coding.
+              I love reading, listening to music, climbing, art, journaling, food :)</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/PaolaDiaz_CV.pdf')">
+                    Download CV
+                </button>            
+            <button class="btn btn-color-1"  onclick="location.href='./#contact' "">
+                Contact Info
+            </button>
+            </div>
+    <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon" onclick="redirectTolinkedin()">
+        <img src="./assets/github.png" alt="my github profile" class="icon" onclick="redirectToGitHub()">
+        <img src="./assets/medium.png" alt="my Medium profile" class="icon" onClick="redirectToMedium()">
+    </div>
+    </div>
+    </section>
+
+    <section id="about">
+      <div class="container1-about">
+        <!-- Title -->
+        <h1 class="title-cv">About me:</h1>
+
+        <!-- Education Section -->
+            <h2 class="education-title">Education</h2>
+            <br>
+            <p class="education-detail">Universidad Anáhuac Oaxaca 2020-2025</p>
+            <br>
+            <br>
+
+        <!-- Experience Section -->
+            <h2 class="experience-title">Experience</h2>
+            <br>
+            <div>
+                <h3>AfrodIA</h3>
+                <p>
+                    Designed and implemented an interactive platform with an integrated chatbot to facilitate access to 
+                    information on sexual rights for individuals in Oaxaca. The project aimed to provide an inclusive, 
+                    user-friendly resource to promote education on sexual health, consent, reproductive rights, and gender inclusivity.
+                </p>
+                <br>
+            </div>
+            <div>
+                <h3>Web Design and UX Development for Restaurants - Internship</h3>
+                <p>
+                    Designed and developed user-friendly websites focusing on the restaurant industry, improving online 
+                    presence and customer experience. Integrated responsive design and intuitive navigation to enhance usability.
+                </p>
+                <br>
+                <br>
+            </div>
+        <!-- Languages -->
+            <h2 class="languages-title">Languages</h2>
+            <br>
+            <p>English - Spanish</p>
+            <br>
+            <br>
+
+        <!-- Accomplishments Section -->
+            <h2>Accomplishments</h2>
+            <br>
+            <ul>
+                <li id="li-accomplishments">ICPC - International Collegiate Programming Contest (2021)</li>
+                <li id="li-accomplishments">Vice President of ACM-W Association for Computing Machinery for Women (2022)</li>
+                <li id="li-accomplishments">Founder of the first Congress in Universidad Anáhuac Oaxaca “MIA” to empower women in STEM (2021-2023)</li>
+            </ul>
+    </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills' " >
+    </section>
+
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skills-sub-title">Web and DataBase</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>ReactJS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>NodeJs</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skills-sub-title">Programming</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container1">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">App TuriOax</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-3 "
+                  onclick="redirectToGitHubTuriOax()"
+                >
+                  Github
+                </button>
+                
+              </div>
+            </div>
+            <div class="details-container color-container2">
+              <div class="article-container">
+                <img
+                  src="./assets/AfrodIA.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Chatbot AfrodIA</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-5" onclick="redirectToAfrodia()">
+                  Live demo
+              </button>
+                
+              </div>
+            </div>
+            <div class="details-container color-container3">
+              <div class="article-container">
+                <img
+                  src="./assets/pandas.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Análisis de datos con Pandas</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-4"
+                  onclick="redirectToPandasPython()"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="title-gd">Graphic design</h1>
+        <div class="container-gd">
+          <!-- Sección de texto -->
+          <div class="text-section-gd">
+              <h1>Restaurante Mariana Campestre</h1>
+              <br>
+              <p>
+                  Branding, identity, web design on Figma.
+              </p>
+              <br>
+              <br>
+              <button
+              class="btn btn-color-3"
+              onclick="redirectToMarianaCampestre()"
+            >
+              Link
+            </button>
+          </div>
+  
+          <!-- Sección de imagen -->
+          <div class="image-section-gd">
+              <img src="./assets/marianacampestre.png" alt="Ejemplo de imagen">
+          </div>
+      </div>
+      <div class="container-gd1">
+        <!-- Sección de texto -->
+        <div class="text-section-gd">
+            <h1>AfrodIA</h1>
+            <br>
+            <p>
+              Branding, identity, web design on Figma.
+            </p>
+            <br>
+            <br>
+            <button
+                  class="btn btn-color-4"
+                  onclick="redirectToAfrodia()"
+                >
+                  Link
+                </button>
+        </div>
+
+        <!-- Sección de imagen -->
+        <div class="image-section-gd">
+            <img src="./assets/brandingafrodia.png" alt="Ejemplo de imagen">
+        </div>
+    </div>
+
+
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#contact' " >
+      </section>
+
+
+
+
+      <section id="contact">
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:paodiazserrano@gmail.com">paodiazserrano@gmail.com</a></p>
+            </div>
+       
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/paola-diaz-ser" target="_blank">Linkedin</a></p>
+            </div>
+        </div>
+      </section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <p>Copyright &#169; 2023 Paola Díaz Todos los derechos reservados</p>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
