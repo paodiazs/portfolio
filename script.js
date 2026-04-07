@@ -30,3 +30,7 @@ function redirectToMedium(){
 function redirectToMarianaCampestre(){
     window.open('https://restaurantecampestremariana.com/', '_blank');
 }
+
+function redirectToInstagram(){
+    window.open('https://www.instagram.com/t3chwithpao/', '_blank');
+}
